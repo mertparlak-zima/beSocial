@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "582358698848",
+    "project_id": "besocial-7c16e",
+    "storage_bucket": "besocial-7c16e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582358698848:android:cfd138c018fccca2b5ac05",
+        "android_client_info": {
+          "package_name": "app.zimablue.besocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582358698848-ghun1ff40bhju927ldgnpik0fitrmr89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXQiGRVyQwDjs2vRUHAozv6OMAq_yphNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582358698848-ghun1ff40bhju927ldgnpik0fitrmr89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
