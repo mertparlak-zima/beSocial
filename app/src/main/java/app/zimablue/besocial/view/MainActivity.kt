@@ -1,4 +1,4 @@
-package app.zimablue.besocial
+package app.zimablue.besocial.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
