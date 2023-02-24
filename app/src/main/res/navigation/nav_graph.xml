@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
 
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="app.zimablue.besocial.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_flowFragment"
+            app:destination="@id/flowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postShareFragment"
+        android:name="app.zimablue.besocial.view.PostShareFragment"
+        android:label="fragment_post_share"
+        tools:layout="@layout/fragment_post_share" >
+        <action
+            android:id="@+id/action_postShareFragment_to_flowFragment"
+            app:destination="@id/flowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flowFragment"
+        android:name="app.zimablue.besocial.view.FlowFragment"
+        android:label="fragment_flow"
+        tools:layout="@layout/fragment_flow" >
+        <action
+            android:id="@+id/action_flowFragment_to_postShareFragment"
+            app:destination="@id/postShareFragment" />
+        <action
+            android:id="@+id/action_flowFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>

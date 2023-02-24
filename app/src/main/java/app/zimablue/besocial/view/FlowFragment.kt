@@ -6,9 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import app.zimablue.besocial.R
+import app.zimablue.besocial.databinding.FragmentFlowBinding
 
 
 class FlowFragment : Fragment() {
+
+    private lateinit var binding: FragmentFlowBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,9 +21,17 @@ class FlowFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_flow, container, false)
+        binding = FragmentFlowBinding.inflate(inflater,container,false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+
+
+        super.onViewCreated(view, savedInstanceState)
     }
 
 }
