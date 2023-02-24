@@ -119,8 +119,12 @@ class PostShareFragment : Fragment() {
 
                         firestore.collection("Post").add(postMap).addOnSuccessListener {
 
-                            val action = PostShareFragmentDirections.actionPostShareFragmentToFlowFragment()
-                            Navigation.findNavController(requireActivity(),R.id.MainActivityFragmentContainerView).navigate(action)
+                            Toast.makeText(requireContext(),"Post Sharing",Toast.LENGTH_SHORT).show()
+
+//                            val action = PostShareFragmentDirections.actionPostShareFragmentToFlowFragment()
+//                            Navigation.findNavController(requireActivity(),R.id.MainActivityFragmentContainerView).navigate(action)
+
+
 
                         }.addOnFailureListener {
                             Toast.makeText(requireContext(),it.localizedMessage,Toast.LENGTH_LONG).show()
