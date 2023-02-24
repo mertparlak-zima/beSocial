@@ -39,17 +39,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
-    private fun signInClicked(view: View){
-
-    }
-
-    private fun signUpClicked(view: View){
-
-
-    }
-
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
         val menuInflater = menuInflater
